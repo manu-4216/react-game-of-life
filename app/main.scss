@@ -1,0 +1,29 @@
+/* Colors */
+$bar-bk-color: #381F0B;
+$bar-text-color: #FFFFFF;
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.header {
+  padding-left: 20px;
+  background: $bar-bk-color;
+  color: $bar-text-color;
+  height: 46px;
+  width: 100vw;
+  margin: 0;
+  position: fixed;
+}
+
+.content {
+  padding: 46px 0 0 0;
+  margin: 0;
+  height: 1000px;
+  background-color: grey;
+}
+
+.footer {
+  height: 46px;
+}

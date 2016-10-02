@@ -1,0 +1,37 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "FCC project 4 - Game Of Life",
+  "main": "index.js",
+  "author": "Manuel MICU",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/manu-4216/react-game-of-life/issues"
+  },
+  "homepage": "https://github.com/manu-4216/react-game-of-life#readme",
+  "dependencies": {
+    "react": "^15.3.0",
+    "react-dom": "^15.3.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.13.2",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.16.0",
+    "babel-preset-react": "^6.11.1",
+    "css-loader": "^0.23.1",
+    "html-webpack-plugin": "^2.22.0",
+    "node-sass": "^3.8.0",
+    "sass-loader": "^4.0.0",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1"
+  },
+  "scripts": {
+    "start": "webpack-dev-server",
+    "production": "webpack -p --config webpack.prod.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manu-4216/react-game-of-life.git"
+  }
+}
