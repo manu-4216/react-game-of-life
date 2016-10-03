@@ -1,29 +1,84 @@
 /* Colors */
-$bar-bk-color: #381F0B;
-$bar-text-color: #FFFFFF;
+$bar-bk-color: #333333;
+$text-color: #FFFFFF;
 
 body {
   padding: 0;
   margin: 0;
+  font-size: 16px;
+  /* use system fonts */
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+  color: $text-color;
 }
 
 .header {
-  padding-left: 20px;
-  background: $bar-bk-color;
-  color: $bar-text-color;
-  height: 46px;
-  width: 100vw;
+  padding: 0.3em 1em;
   margin: 0;
+  background: $bar-bk-color;
+  width: 100vw;
+  font-size: 160%;
+  // Center content:
+  text-align: center;
   position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+
+.header a {
+  color: $text-color;
+  text-decoration: none;
 }
 
 .content {
-  padding: 46px 0 0 0;
+  padding: 3rem 0 2rem 0;
   margin: 0;
-  height: 1000px;
   background-color: grey;
+  text-align: center;
 }
 
 .footer {
-  height: 46px;
+  margin: 0 auto;
+  padding: 0;
+  background-color: black;
+  text-align: center;
+}
+
+.game-top {
+  margin: 1.5rem auto 0;
+  text-align: center;
+  background-color: black;
+  width: 30rem;
+  border-radius: 0.5em 0.5em 0 0;
+}
+
+.game-bottom {
+  margin: 0 auto;
+  text-align: center;
+  background-color: black;
+  width: 30rem;
+  border-radius: 0 0 0.5em 0.5em;
+}
+
+.button {
+  background-color: red;
+  color: black;
+  display: inline-block;
+  font-size: 100%;
+  text-align: center;
+  margin: 0.5em;
+  width: 5em;
+  border: 2px solid orange;
+  border-radius: 0.2em;
+  cursor: pointer;
+  &:hover {
+    background-color: darken(red, 10%);
+  }
+}
+
+.game-board {
+  background-color: blue;
+  margin: 0 auto;
+  border: 5px solid black;
+  border-radius: 0.8rem;
 }
