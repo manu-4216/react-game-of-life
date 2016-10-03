@@ -1,6 +1,6 @@
 /* Colors */
-$bar-bk-color: #333333;
-$text-color: #FFFFFF;
+$bk-color: #2d2929;
+$accent-color: #ffbecc;
 
 body {
   padding: 0;
@@ -8,13 +8,13 @@ body {
   font-size: 16px;
   /* use system fonts */
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
-  color: $text-color;
+  color: lighten($accent-color, 10%);
 }
 
 .header {
   padding: 0.3em 1em;
   margin: 0;
-  background: $bar-bk-color;
+  background: darken($bk-color, 10%);
   width: 100vw;
   font-size: 160%;
   // Center content:
@@ -23,62 +23,90 @@ body {
   top: 0;
   left: 50%;
   transform: translate(-50%, 0%);
+  box-shadow: 0 0.3em 1em black;
 }
 
 .header a {
-  color: $text-color;
+  color: inherit;
   text-decoration: none;
 }
 
 .content {
   padding: 3rem 0 2rem 0;
   margin: 0;
-  background-color: grey;
+  background-color: grey; /* For browsers that do not support gradients */
   text-align: center;
-}
-
-.footer {
-  margin: 0 auto;
-  padding: 0;
-  background-color: black;
-  text-align: center;
+  background-image: radial-gradient(grey, $bk-color );
 }
 
 .game-top {
   margin: 1.5rem auto 0;
   text-align: center;
-  background-color: black;
+  background-color: $bk-color;
   width: 30rem;
   border-radius: 0.5em 0.5em 0 0;
+  box-shadow: 0px 0.6em 1.6em -0.3em black;
 }
 
 .game-bottom {
   margin: 0 auto;
+  padding-bottom: 0.4em;
   text-align: center;
-  background-color: black;
+  background-color: $bk-color;
   width: 30rem;
   border-radius: 0 0 0.5em 0.5em;
+  box-shadow: 0px 0.6em 1.6em -0.3em black;
+}
+
+.game-board {
+  //background-color: #4d4d61;
+  background-color: $bk-color;
+  margin: 0 auto;
+  border: 0.4rem solid $bk-color;
+  border-radius: 0.5rem;
+  box-shadow: 0px 0.6em 1.6em -0.3em black;
+  padding: 0;
+  //box-sizing:
+}
+
+.div {
+  padding: 0;
+  line-height: 0.5rem;
+}
+
+.cell {
+  margin: 0;
+  width: 0.8rem;
+  height: 0.8rem;
+  float: left;
+  color: darken(grey, 20%);
+  border-top: 1px solid $bk-color;
+  border-left: 1px solid $bk-color;
+  display: inline-block;
+  font-size: 25%;
+  background-color: black;
+  box-sizing: border-box;
 }
 
 .button {
-  background-color: red;
+  background-color: $accent-color;
   color: black;
   display: inline-block;
   font-size: 100%;
   text-align: center;
-  margin: 0.5em;
+  margin: 0.4em  0.5em 0.2em;
   width: 5em;
-  border: 2px solid orange;
+  border: none;
   border-radius: 0.2em;
   cursor: pointer;
   &:hover {
-    background-color: darken(red, 10%);
+    background-color: darken($accent-color, 10%);
   }
 }
 
-.game-board {
-  background-color: blue;
+.footer {
   margin: 0 auto;
-  border: 5px solid black;
-  border-radius: 0.8rem;
+  padding: 0.8em;
+  background-color: $bk-color;
+  text-align: center;
 }
