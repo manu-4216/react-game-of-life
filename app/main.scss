@@ -23,7 +23,7 @@ body {
   top: 0;
   left: 50%;
   transform: translate(-50%, 0%);
-  box-shadow: 0 0.3em 1em black;
+  box-shadow: 0 0.3rem 0.5rem black;
 }
 
 .header a {
@@ -76,16 +76,20 @@ body {
 
 .cell {
   margin: 0;
-  width: 0.8rem;
-  height: 0.8rem;
+  /*width: 0.8rem;
+  height: 0.8rem;*/
   float: left;
-  color: darken(grey, 20%);
+  color: darken(grey, 10%);
   border-top: 1px solid $bk-color;
   border-left: 1px solid $bk-color;
   display: inline-block;
   font-size: 25%;
   background-color: black;
   box-sizing: border-box;
+}
+
+.cell__alive {
+  background-color: #EE4444;
 }
 
 .button {
