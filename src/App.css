@@ -37,9 +37,13 @@
   background: #f55858;
 }
 
-.Board {
+.Title {
+  margin: 15px auto;
+  font-size: 22px;
 }
 
-h1 {
-  margin: 20px auto;
+.Title-Link {
+  font-size: 70%;
+  font-weight: 200;
+  margin-left: 5px;
 }

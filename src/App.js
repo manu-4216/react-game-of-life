@@ -204,9 +204,14 @@ class App extends Component {
     const { board, cells, started, generation } = this.state;
     return (
       <div className="App">
-        <h1>
-          <a href="https://en.wikipedia.org/wiki/Conway's_Game_of_Life" />
+        <h1 className="Title">
           Game Of Life
+          <a
+            href="https://en.wikipedia.org/wiki/Conway's_Game_of_Life"
+            target="_blank"
+          >
+            <span className="Title-Link">(wiki)</span>
+          </a>
         </h1>
         <Board
           board={board}
@@ -313,7 +318,7 @@ class Cell extends Component {
       <span
         data-row={row}
         data-column={column}
-        data-alive={alive}
+        data-alive={alive ? true : false}
         className={'Cell' + (alive ? ' alive' : '')}
         style={{
           height: +cellSize + 'px',
