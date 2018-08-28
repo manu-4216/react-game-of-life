@@ -1,0 +1,45 @@
+.App {
+  text-align: center;
+}
+
+.Row {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.Generation {
+  margin-top: 10px;
+}
+
+.Cell {
+  border: 1px solid #424242;
+  display: inline-block;
+  box-sizing: border-box;
+  margin-bottom: -1px;
+  margin-left: -1px;
+}
+
+.Cell.alive {
+  background: black;
+}
+
+.Button {
+  border: 1px solid black;
+  padding: 0.5em 1em;
+  margin-top: 1em;
+  display: inline-block;
+  cursor: pointer;
+  background: rgb(190, 183, 183);
+}
+
+.Button.Danger {
+  background: #f55858;
+}
+
+.Board {
+}
+
+h1 {
+  margin: 20px auto;
+}
